@@ -1,7 +1,7 @@
 {
   "name": "dsh-balance-bridge",
   "version": "1.0.0",
-  "description": "A passive, token-protected LAN balance bridge for DeepSeek Harness and dshMobile.",
+  "description": "A passive LAN balance bridge and dsh-mobile internet balance route for DeepSeek Harness / dshMobile.",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
@@ -16,7 +16,8 @@
     "README.en.md",
     "LICENSE",
     "SECURITY.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "SHA256SUMS"
   ],
   "scripts": {
     "start": "node lib/standalone.js",
