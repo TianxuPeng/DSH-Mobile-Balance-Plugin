@@ -1,0 +1,56 @@
+{
+  "name": "dsh-balance-bridge",
+  "version": "1.0.0",
+  "description": "A passive, token-protected LAN balance bridge for DeepSeek Harness and dshMobile.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "mobile-extension",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "start": "node lib/standalone.js",
+    "test": "node test/bridge.test.mjs",
+    "pack": "npm pack"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "balance",
+    "bridge",
+    "dshmobile",
+    "lan"
+  ],
+  "license": "MIT",
+  "author": "dshMobile contributors",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

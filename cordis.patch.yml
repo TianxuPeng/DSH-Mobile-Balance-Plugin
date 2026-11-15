@@ -1,0 +1,6 @@
+# Bundle layer for the dsh-balance-bridge plugin.
+# The id must stay unique and equal to the package name. Do not put a
+# trailing comment on the "id:" line: DSH marketplace preflight parses it.
+- insert:
+    - id: dsh-balance-bridge
+      name: 'dsh-balance-bridge'

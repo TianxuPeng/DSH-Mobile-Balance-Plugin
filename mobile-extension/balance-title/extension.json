@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "id": "balance-title",
+  "name": "dshMobile 余额标题栏",
+  "version": "0.1.0",
+  "description": "Authenticated dsh-mobile route that refreshes dsh-pet balance for the native title bar."
+}
